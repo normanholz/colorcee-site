@@ -1,0 +1,6 @@
+- q: "Is Color.cee free?"
+  a: "Yes, the core app is free. Some pro features may be optional add-ons later."
+- q: "Does it work offline?"
+  a: "Most actions work offline and sync when you reconnect."
+- q: "What do the colors mean?"
+  a: "You can use the default set (e.g., Green = Yes, Yellow = Happiness) or customize your own."

@@ -1,0 +1,9 @@
+/_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.DS_Store
+/.idea/colorcee-site.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml

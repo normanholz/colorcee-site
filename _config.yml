@@ -1,0 +1,34 @@
+title: "LessWord Inc."
+description: "Color.cee — color-first communication for everyday life and business."
+url: "https://normanholz.github.io" # Update to your GitHub Pages URL
+baseurl: "" # Set to "/<repo>" for project pages
+timezone: "Europe/Berlin"
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# SCSS Configuration
+sass:
+  sass_dir: assets/scss
+
+# Exclude files from processing
+exclude:
+  - CLAUDE.md
+# Toggles
+analytics: false # Set true to enable GA snippet in _includes/analytics.html
+formspree_endpoint: "" # e.g., "https://formspree.io/f/xxxxxx"
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: App
+    url: /app/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/

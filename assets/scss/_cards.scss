@@ -1,0 +1,10 @@
+.card {
+  background: #fff;
+  border: 1px solid $color-light-gray;
+  @include radius-lg;
+  @include shadow-sm;
+  padding: 1rem;
+}
+.feature { background: #fff; border: 1px solid $color-light-gray; padding: 1rem; @include radius-lg; }
+.feature__icon { color: $color-icon; font-size: 1.2rem; }
+.testimonial { background: #fff; border-left: 4px solid $color-secondary; padding: 1rem; @include radius-lg; }

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="60" viewBox="0 0 340 60" role="img" aria-labelledby="title">
+  <title>Store badges</title>
+  <a id="appstore">
+    <rect x="0" y="5" width="160" height="50" rx="8" fill="#000"/>
+    <text x="80" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#fff">App Store</text>
+  </a>
+  <a id="playstore">
+    <rect x="180" y="5" width="160" height="50" rx="8" fill="#000"/>
+    <text x="260" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#fff">Google Play</text>
+  </a>
+</svg>

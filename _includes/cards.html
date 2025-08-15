@@ -1,0 +1,8 @@
+<div class="grid cards">
+  {% for card in include.items %}
+    <article class="card">
+      <h3 class="card__title">{{ card.title }}</h3>
+      <p>{{ card.text }}</p>
+    </article>
+  {% endfor %}
+</div>

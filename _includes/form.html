@@ -1,0 +1,33 @@
+{% assign endpoint = site.formspree_endpoint %}
+<form {% if endpoint != "" %} action="{{ endpoint }}" method="POST" {% else %} action="mailto:contact@lessword.inc" method="GET" enctype="text/plain" {% endif %} class="contact-form" novalidate>
+  <div class="form-row">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required autocomplete="name">
+  </div>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required autocomplete="email" inputmode="email">
+  </div>
+  <div class="form-row">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+  <div class="form-row">
+    <button type="submit" class="btn">Send</button>
+  </div>
+  <p class="form-note">We use Formspree. No account? The form falls back to email.</p>
+</form>
+<script>
+  // minimal client-side validation
+  document.addEventListener('submit', function(e){
+    const form = e.target.closest('form.contact-form');
+    if(!form) return;
+    const name = form.querySelector('#name');
+    const email = form.querySelector('#email');
+    const message = form.querySelector('#message');
+    if(!name.value.trim() || !email.value.trim() || !message.value.trim()){
+      e.preventDefault();
+      alert('Please fill in all required fields.');
+    }
+  }, { passive: true });
+</script>

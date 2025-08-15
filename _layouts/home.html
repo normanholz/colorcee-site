@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<section class="hero container">
+  <div class="hero__content">
+    <h1 class="hero__title">Color.cee</h1>
+    <p class="hero__subtitle">Say more with color — for everyday life and business.</p>
+    {% include store-badges.html %}
+  </div>
+  <div class="hero__media">
+    <img src="{{ '/assets/img/device-mock.svg' | relative_url }}" alt="Color.cee app mockup" width="320" height="640" decoding="async" fetchpriority="high">
+  </div>
+</section>
+
+<section class="container value-grid" aria-labelledby="value-props">
+  <h2 id="value-props">Why Color.cee</h2>
+  <div class="grid">
+    {% for feat in site.data.features.everyday %}
+      {% include feature.html feature=feat %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container split" aria-labelledby="how-it-works">
+  <div>
+    <h2 id="how-it-works">How it works</h2>
+    <ol class="howto">
+      <li>Pick a color to express intent.</li>
+      <li>Share with a tap, no typing needed.</li>
+      <li>Get immediate clarity across contexts.</li>
+    </ol>
+    <p class="note">Tip: Use green for “Yes”, yellow for “Happiness” — see more on the <a href="{{ '/app/' | relative_url }}">App page</a>.</p>
+  </div>
+  <div>
+    <h3>Everyday vs. Biz highlights</h3>
+    <div class="highlights">
+      <div>
+        <h4>Everyday</h4>
+        <ul>
+        {% for feat in site.data.features.everyday limit:3 %}
+          <li>{{ feat.title }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h4>Business</h4>
+        <ul>
+        {% for feat in site.data.features.business limit:3 %}
+          <li>{{ feat.title }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container gallery" aria-labelledby="screenshots">
+  <h2 id="screenshots">Screenshots</h2>
+  <div class="grid screenshots">
+    {% assign shots = "1,2,3" | split: "," %}
+    {% for n in shots %}
+      <a href="{{ ('/assets/img/screenshots/' | append: n | append: '.webp') | relative_url }}" data-lightbox="screens" class="shot">
+        <img loading="lazy" src="{{ ('/assets/img/screenshots/' | append: n | append: '.webp') | relative_url }}" alt="Color.cee screenshot {{ n }}" width="480" height="960">
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container testimonials" aria-labelledby="testimonials">
+  <h2 id="testimonials">What users say</h2>
+  <div class="grid">
+    {% for t in site.data.testimonials %}
+      {% include testimonial.html item=t %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container cta-band" aria-label="Install callout">
+  <div class="cta-band__inner">
+    <h2>Try Color.cee today</h2>
+    {% include store-badges.html %}
+  </div>
+</section>

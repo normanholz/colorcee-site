@@ -1,0 +1,14 @@
+everyday:
+  - title: "Tap-to-meaning"
+    text: "Map quick colors to common intents and moods for instant clarity."
+  - title: "Zero-typing"
+    text: "Communicate without words when you're busy or on the go."
+  - title: "Lightweight sharing"
+    text: "Share a color cue with contacts or groups in a second."
+business:
+  - title: "Status signals"
+    text: "Use colors to mark approvals, blockers, and priorities."
+  - title: "Team alignment"
+    text: "Create shared color vocabularies for projects."
+  - title: "Audit-friendly"
+    text: "Color logs help summarize decisions at a glance."
