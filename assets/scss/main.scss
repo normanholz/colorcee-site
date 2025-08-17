@@ -21,11 +21,23 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; gap: .5rem; text-decoration: none; }
 .brand__text { font-weight: 700; color: $color-text; }
-.nav-toggle { width: 40px; height: 40px; border: 1px solid $color-light-gray; background: #fff; border-radius: 8px; }
+.nav-toggle { 
+  width: 40px; height: 40px; 
+  border: 1px solid $color-light-gray; 
+  background: #fff; 
+  border-radius: 8px; 
+  color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .site-nav ul { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }
 @media (max-width: 760px){
   .site-nav { display: none; }
   .site-nav[aria-expanded="true"] { display: block; }
+}
+@media (min-width: 761px){
+  .nav-toggle { display: none; }
 }
 
 /* Hero */
