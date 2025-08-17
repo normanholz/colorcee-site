@@ -6,6 +6,7 @@ permalink: /app/
 <nav class="local-nav" aria-label="App sections">
   <ul>
     <li><a href="#overview" aria-current="true">Overview</a></li>
+    <li><a href="#video">Video</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#screens">Screens</a></li>
     <li><a href="#reviews">Reviews</a></li>
@@ -17,6 +18,21 @@ permalink: /app/
   <h1>Color.cee</h1>
   <p class="lead">Color-first communication. Faster decisions, fewer words.</p>
   {% include store-badges.html %}
+</section>
+
+<section id="video" class="container">
+  <h2>See Color.cee in Action</h2>
+  <div class="video-wrapper">
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/Su8vIQI_ez8" 
+      title="Color.cee App Demo" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </div>
 </section>
 
 <section id="features" class="container">

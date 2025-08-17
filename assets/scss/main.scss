@@ -86,5 +86,29 @@ input, textarea { border: 1px solid $color-light-gray; border-radius: 10px; padd
 input:focus-visible, textarea:focus-visible { @include focus-ring; }
 .form-note { color: $color-icon; font-size: .9rem; }
 
+/* Video wrapper */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-caption {
+  text-align: center;
+  color: $color-icon;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
 /* Page prose */
 .prose-page p, .prose-page li { max-width: 65ch; }
