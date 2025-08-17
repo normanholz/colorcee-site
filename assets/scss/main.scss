@@ -45,7 +45,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 @media (max-width: 900px){ .highlights { grid-template-columns: 1fr; } }
 
-.screenshots .shot { display: block; border: 1px solid $color-light-gray; @include radius-lg; overflow: hidden; }
+.screenshots .shot { display: block; @include radius-lg; overflow: hidden; }
 .screenshots img { display: block; width: 100%; height: auto; }
 
 .cta-band { background: linear-gradient(90deg, $color-primary 0%, $color-secondary 100%); color: #fff; margin: 2rem 0; }
@@ -58,7 +58,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Lightbox */
 .lightbox-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.8); display: none; align-items: center; justify-content: center; padding: 2rem; z-index: 100; }
-.lightbox-backdrop img { max-width: 90vw; max-height: 90vh; border-radius: 12px; border: 1px solid $color-light-gray; }
+.lightbox-backdrop img { max-width: 90vw; max-height: 90vh; border-radius: 12px; }
 .lightbox-backdrop[aria-hidden="false"] { display: flex; }
 
 /* App page sticky local nav */

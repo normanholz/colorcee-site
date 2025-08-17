@@ -39,8 +39,8 @@ permalink: /app/
   <div class="grid screenshots">
     {% assign shots = "1,2,3" | split: "," %}
     {% for n in shots %}
-      <a href="{{ ('/assets/img/screenshots/' | append: n | append: '.webp') | relative_url }}" data-lightbox="screens" class="shot">
-        <img loading="lazy" src="{{ ('/assets/img/screenshots/' | append: n | append: '.webp') | relative_url }}" alt="App screen {{ n }}" width="480" height="960">
+      <a href="{{ '/assets/img/screenshots/' | append: n | append: '.webp' | relative_url }}" data-lightbox="screens" class="shot">
+        <img loading="lazy" src="{{ '/assets/img/screenshots/' | append: n | append: '.webp' | relative_url }}" alt="App screen {{ n }}" width="480" height="960">
       </a>
     {% endfor %}
   </div>
