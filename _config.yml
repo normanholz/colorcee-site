@@ -1,7 +1,7 @@
 title: "LessWord Inc."
 description: "Color.cee — color-first communication for everyday life and business."
-url: "https://normanholz.github.io" # Update to your GitHub Pages URL
-baseurl: "" # Set to "/<repo>" for project pages
+url: "https://showcase.normanholz.de" # Your custom domain
+baseurl: "" # Empty for custom domain
 timezone: "Europe/Berlin"
 markdown: kramdown
 kramdown:
