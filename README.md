@@ -1,4 +1,4 @@
-# LessWord Inc. — Color.cee (Jekyll, GitHub Pages)
+# LessWord — Color.cee (Jekyll, GitHub Pages)
 
 Production-ready Jekyll site for the **Color.cee** mobile app. Compatible with GitHub Pages default build.
 
