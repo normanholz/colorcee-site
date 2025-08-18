@@ -1,5 +1,9 @@
-title: "LessWord Inc."
-description: "Color.cee — color-first communication for everyday life and business."
+title: "{{ site.company_name }}"
+description: "{{ site.app_name }} — color-first communication for everyday life and business."
+
+# Global variables
+company_name: "LessWord Inc."
+app_name: "Color.cee"
 url: "https://showcase.normanholz.de" # Your custom domain
 baseurl: "" # Empty for custom domain
 timezone: "Europe/Berlin"

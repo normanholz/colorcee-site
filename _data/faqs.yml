@@ -1,4 +1,4 @@
-- q: "Is Color.cee free?"
+- q: "Is {{ site.app_name }} free?"
   a: "Yes, the core app is free. Some pro features may be optional add-ons later."
 - q: "Does it work offline?"
   a: "Most actions work offline and sync when you reconnect."

@@ -3,17 +3,17 @@ layout: default
 ---
 <section class="hero container">
   <div class="hero__content">
-    <h1 class="hero__title">Color.cee</h1>
+    <h1 class="hero__title">{{ site.app_name }}</h1>
     <p class="hero__subtitle">Say more with color — for everyday life and business.</p>
     {% include store-badges.html %}
   </div>
   <div class="hero__media">
-    <img src="{{ '/assets/img/device-mock.svg' | relative_url }}" alt="Color.cee app mockup" width="320" height="640" decoding="async" fetchpriority="high">
+    <img src="{{ '/assets/img/device-mock.svg' | relative_url }}" alt="{{ site.app_name }} app mockup" width="320" height="640" decoding="async" fetchpriority="high">
   </div>
 </section>
 
 <section class="container value-grid" aria-labelledby="value-props">
-  <h2 id="value-props">Why Color.cee</h2>
+  <h2 id="value-props">Why {{ site.app_name }}</h2>
   <div class="grid">
     {% for feat in site.data.features.everyday %}
       {% include feature.html feature=feat %}
@@ -60,7 +60,7 @@ layout: default
     {% assign shots = "1,2,3" | split: "," %}
     {% for n in shots %}
       <a href="{{ '/assets/img/screenshots/' | append: n | append: '.webp' | relative_url }}" data-lightbox="screens" class="shot">
-        <img loading="lazy" src="{{ '/assets/img/screenshots/' | append: n | append: '.webp' | relative_url }}" alt="Color.cee screenshot {{ n }}" width="480" height="960">
+        <img loading="lazy" src="{{ '/assets/img/screenshots/' | append: n | append: '.webp' | relative_url }}" alt="{{ site.app_name }} screenshot {{ n }}" width="480" height="960">
       </a>
     {% endfor %}
   </div>

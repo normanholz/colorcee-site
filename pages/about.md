@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 <h2>Our Story</h2>
-<p>LessWord Inc. builds tools that make communication simpler—and sometimes wordless.</p>
+<p>{{ site.company_name }} builds tools that make communication simpler—and sometimes wordless.</p>
 
 <h2>Mission</h2>
 <p>Reduce friction and increase clarity across personal and professional contexts.</p>

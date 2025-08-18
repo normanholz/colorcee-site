@@ -1,8 +1,8 @@
 <header class="site-header" role="banner">
   <div class="container header-inner">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/img/logo.svg' | relative_url }}" width="36" height="36" alt="LessWord Inc. logo">
-      <span class="brand__text">LessWord</span>
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" width="36" height="36" alt="{{ site.company_name }} logo">
+      <span class="brand__text">{{ site.company_name | remove: ' Inc.' }}</span>
     </a>
     <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
       <span class="sr-only">Menu</span>

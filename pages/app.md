@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Color.cee App"
+title: "{{ site.app_name }} App"
 permalink: /app/
 ---
 <nav class="local-nav" aria-label="App sections">
@@ -15,19 +15,19 @@ permalink: /app/
 </nav>
 
 <section id="overview" class="container">
-  <h1>Color.cee</h1>
+  <h1>{{ site.app_name }}</h1>
   <p class="lead">Color-first communication. Faster decisions, fewer words.</p>
   {% include store-badges.html %}
 </section>
 
 <section id="video" class="container">
-  <h2>See Color.cee in Action</h2>
+  <h2>See {{ site.app_name }} in Action</h2>
   <div class="video-wrapper">
     <iframe 
       width="560" 
       height="315" 
       src="https://www.youtube.com/embed/Su8vIQI_ez8" 
-      title="Color.cee App Demo" 
+      title="{{ site.app_name }} App Demo" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       allowfullscreen>
@@ -74,7 +74,7 @@ permalink: /app/
 <section id="faq" class="container">
   <h2>FAQ</h2>
   {% include faq.html items=site.data.faqs %}
-  <p><a class="btn" href="#overview">Install Color.cee</a></p>
+  <p><a class="btn" href="#overview">Install {{ site.app_name }}</a></p>
 </section>
 
 <!-- TODO: Replace this content with the exact App page copy you provide. -->
