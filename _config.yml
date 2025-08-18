@@ -25,7 +25,7 @@ exclude:
   - CLAUDE.md
 # Toggles
 analytics: false # Set true to enable GA snippet in _includes/analytics.html
-formspree_endpoint: "" # e.g., "https://formspree.io/f/xxxxxx"
+formspree_endpoint: "https://formspree.io/f/xeozwpwr" # e.g., "https://formspree.io/f/xxxxxx"
 # Navigation
 nav:
   - title: Home
