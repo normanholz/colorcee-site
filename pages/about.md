@@ -3,21 +3,18 @@ layout: page
 title: "About"
 permalink: /about/
 ---
+
 <h2>Our Story</h2>
-<p>{{ site.company_name }} builds tools that make communication simpler—and sometimes wordless.</p>
 
-<h2>Mission</h2>
-<p>Reduce friction and increase clarity across personal and professional contexts.</p>
+{{ site.company_name }} is an innovative, small software and management consulting company with global ambitions. 
+We are distinguished by our high flexibility and rapid implementation of international client requirements – 
+always with a focus on effective communication.
 
-<h2>Vision: Communication 5.0</h2>
-<p>A world where intent is instantly understood, accessibility is a default, and color is a universal bridge.</p>
+<h2>{{ site.app_name }}</h2>
 
-<h2>Values</h2>
-<ul>
-  <li>Accessibility</li>
-  <li>Privacy</li>
-  <li>Simplicity</li>
-  <li>Speed</li>
-</ul>
+{{ site.app_name }} is our first app – innovative, intuitive and powerful. It exemplifies LessWord's commitment: rapidly developed 
+products, strong communication focus, and global deployment readiness.
 
-<!-- TODO: Replace the About page text with your exact copy. -->
+<h2>Vision</h2>
+
+With {{ site.app_name }}, our philosophy comes to life: innovative technology, agile development pace, and communication at the center.
