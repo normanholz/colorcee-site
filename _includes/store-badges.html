@@ -1,8 +1,29 @@
-<div class="store-badges">
-  <a href="#" target="_blank" rel="noopener" aria-label="Download on the App Store">
-    <img src="{{ '/assets/img/app-store-badge.svg' | relative_url }}" width="160" height="52" alt="App Store badge">
-  </a>
-  <a href="#" target="_blank" rel="noopener" aria-label="Get it on Google Play">
-    <img src="{{ '/assets/img/google-play-badge.svg' | relative_url }}" width="160" height="52" alt="Google Play badge">
-  </a>
+<div class="store-badges" role="group" aria-label="Download the app">
+    <!-- App Store -->
+    <a
+            class="badge badge--apple"
+            href="https://apps.apple.com/app/id{{ site.ios_app_id }}{% if site.apple_affiliate_token and site.apple_affiliate_token != '' %}?at={{ site.apple_affiliate_token }}{% endif %}"
+            target="_blank" rel="noopener"
+            aria-label="Download on the App Store"
+    >
+        <img
+                src="{{ '/assets/img/badges/app-store/en.svg' | relative_url }}"
+                alt="Download on the App Store"
+                height="44" loading="lazy"
+        />
+    </a>
+
+    <!-- Google Play -->
+    <a
+            class="badge badge--google"
+            href="https://play.google.com/store/apps/details?id={{ site.android_package }}{% if site.utm_campaign %}&referrer=utm_source%3Dwebsite%26utm_medium%3Dbadge%26utm_campaign%3D{{ site.utm_campaign | uri_escape }}{% endif %}"
+            target="_blank" rel="noopener"
+            aria-label="Get it on Google Play"
+    >
+        <img
+                src="{{ '/assets/img/badges/google-play/en.png' | relative_url }}"
+                alt="Get it on Google Play"
+                height="44" loading="lazy"
+        />
+    </a>
 </div>

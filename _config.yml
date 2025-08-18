@@ -16,6 +16,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+# Store Badges
+ios_app_id: "1234567890"         # your Apple App ID (numeric)
+android_package: "com.example.app" # your Play package name
+badge_locale: "en-US"             # Apple badge locale (e.g., de-DE, en-US)
+google_badge_locale: "en"         # Google badge locale code (e.g., de, en)
+#apple_affiliate_token: ""         # optional: Apple affiliate ?at= token
+#utm_campaign: "website-badge"     # optional: for Play referrer UTM
+
 # SCSS Configuration
 sass:
   sass_dir: assets/scss
