@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "{{ site.app_name }} App"
+title: ""
 permalink: /app/
 ---
 <nav class="local-nav" aria-label="App sections">
