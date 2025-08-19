@@ -4,7 +4,7 @@ description: "Color.cee — color-first communication for everyday life and busi
 # Global variables
 company_name: "LessWord UG"
 app_name: "Color.cee"
-url: "https://showcase.normanholz.de" # Your custom domain
+url: "https://less-word.com" # Your custom domain
 baseurl: "" # Empty for custom domain
 timezone: "Europe/Berlin"
 markdown: kramdown
