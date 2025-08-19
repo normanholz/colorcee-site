@@ -40,14 +40,7 @@ permalink: /app/
   <h3>Everyday</h3>
   {% include cards.html items=site.data.features.everyday %}
   <h3>Business</h3>
-  {% include cards.html items=site.data.features.business %}
-  <aside class="examples">
-    <h3>Examples</h3>
-    <ul>
-      <li><strong>Yellow</strong> = Happiness</li>
-      <li><strong>Green</strong> = Yes</li>
-    </ul>
-  </aside>
+  {% include cards.html items=site.data.features.business %} 
 </section>
 
 <section id="screens" class="container gallery">
