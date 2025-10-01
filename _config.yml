@@ -17,7 +17,7 @@ plugins:
   - jekyll-feed
 
 # Store Badges
-ios_app_id: "1234567890"         # your Apple App ID (numeric)
+ios_app_id: "6751437317"         # your Apple App ID (numeric)
 android_package: "com.example.app" # your Play package name
 badge_locale: "en-US"             # Apple badge locale (e.g., de-DE, en-US)
 google_badge_locale: "en"         # Google badge locale code (e.g., de, en)
